@@ -1084,3 +1084,162 @@
   .book-form { padding: 24px; }
   .book-row { grid-template-columns: 1fr; }
 }
+
+
+/* ============================================
+   MOBILE — comprehensive responsive cleanup
+   ============================================ */
+
+@media (max-width: 720px) {
+
+  /* Wrap & section padding */
+  .wrap, .wrap-tight { padding: 0 18px; }
+
+  /* Nav */
+  .nav-inner { height: 56px; }
+  .brand { font-size: 17px; }
+  .brand-mark { width: 24px; height: 24px; font-size: 14px; border-radius: 6px; }
+  .nav-link { font-size: 13px; padding: 6px 10px; }
+  .nav-link.hide-mobile { display: none; }
+  .nav-links .btn-sm { padding: 7px 12px; font-size: 12.5px; }
+  .nav-links .btn-sm .btn-arrow { display: none; }
+
+  /* Hero */
+  .hero { padding: 36px 0 32px; }
+  .hero-grid { gap: 36px; }
+  .hero-eyebrow { font-size: 10px; margin-bottom: 22px; gap: 8px; }
+  .hero-title { font-size: clamp(40px, 11vw, 56px); margin-bottom: 22px; max-width: none; line-height: 1; }
+  .hero-title .hi { transform: rotate(-1deg); padding: 0 0.1em; }
+  .hero-lede { font-size: 16px; line-height: 1.5; margin-bottom: 28px; }
+  .hero-cta { gap: 10px; margin-bottom: 28px; }
+  .hero-cta .btn { padding: 12px 18px; font-size: 14px; }
+  .hero-meta { gap: 10px 16px; font-size: 12px; }
+  .hero-meta-item { gap: 6px; }
+  .hero-bg-type { font-size: 220px; top: -10px; opacity: 0.55; }
+
+  /* Hero card */
+  .hero-card { padding: 22px; border-radius: 20px; }
+  .hero-card-tag { font-size: 9.5px; margin-bottom: 16px; padding: 4px 9px 4px 8px; }
+  .spec-row { padding: 10px 0; }
+  .spec-k { font-size: 12.5px; }
+  .spec-v { font-size: 13.5px; }
+  .spec-v.big { font-size: 22px; padding: 0 8px; }
+  .hero-card-note { font-size: 12px; margin-top: 14px; }
+
+  /* Ticker */
+  .ticker { padding: 14px 0; margin-top: 16px; }
+  .ticker-track { gap: 36px; }
+  .ticker-item { font-size: 16px; gap: 10px; }
+
+  /* Problem */
+  .problem { padding: 64px 0 48px; }
+  .problem-grid { gap: 28px; }
+  .problem-title { font-size: clamp(30px, 8.5vw, 40px); margin-top: 12px; }
+  .problem-title .strike::after { height: 6px; top: 58%; }
+  .problem-lead { font-size: 16px; line-height: 1.5; margin-bottom: 16px; }
+  .problem-stats { gap: 24px; margin-top: 32px; padding-top: 28px; }
+  .stat-n { font-size: clamp(28px, 8vw, 36px); }
+  .stat-l { font-size: 12.5px; max-width: none; }
+
+  /* Teach */
+  .teach { padding: 56px 0 64px; }
+  .teach-head { margin-bottom: 36px; }
+  .teach-title { font-size: clamp(30px, 8.5vw, 42px); }
+  .teach-sub { font-size: 15.5px; margin-top: 14px; }
+  .teach-grid { grid-template-columns: 1fr; gap: 14px; }
+  .teach-card { min-height: auto; padding: 22px 20px; }
+  .teach-card-tag { margin-bottom: 16px; font-size: 10px; padding: 3px 8px; }
+  .teach-card-title { font-size: 22px; margin-bottom: 10px; }
+  .teach-card-body { font-size: 14.5px; }
+
+  /* Quote band */
+  .quote-band { padding: 72px 0; }
+  .quote-mark { font-size: 110px; margin-bottom: -8px; }
+  .quote-text { font-size: clamp(24px, 7.5vw, 34px); line-height: 1.15; }
+  .quote-attrib { margin-top: 24px; font-size: 10px; }
+
+  /* Format */
+  .format { padding: 64px 0 48px; }
+  .format-head { margin-bottom: 32px; }
+  .format-title { font-size: clamp(28px, 8.5vw, 40px); }
+  .format-grid { gap: 14px; }
+  .format-card { padding: 24px 20px; border-radius: 20px; }
+  .format-card-head { margin-bottom: 16px; padding-bottom: 14px; }
+  .format-card-head .pill { font-size: 9.5px; padding: 4px 9px; }
+  .format-row { padding: 11px 0; gap: 10px; }
+  .format-k { font-size: 13px; }
+  .format-v { font-size: 14px; }
+
+  /* Why free */
+  .why-free { padding: 48px 0; }
+  .wf-card { padding: 32px 22px; gap: 28px; border-radius: 20px; }
+  .wf-title { font-size: clamp(28px, 8vw, 38px); margin-bottom: 18px; }
+  .wf-body { font-size: 15.5px; margin-bottom: 24px; }
+  .wf-cta-row { gap: 14px; }
+  .wf-cta-row .btn { padding: 11px 16px; font-size: 13.5px; }
+  .wf-link { font-size: 13px; }
+  .wf-right { gap: 12px; }
+  .wf-stat-block { padding: 16px 18px; }
+  .wf-stat-n { font-size: 32px; }
+  .wf-stat-l { font-size: 9.5px; }
+
+  /* Founder */
+  .founder { padding: 56px 0 48px; }
+  .founder-inner { padding: 28px 22px; border-radius: 20px; }
+  .founder-text { font-size: clamp(18px, 5.5vw, 22px); margin-top: 18px; margin-bottom: 14px; }
+  .founder-sig { gap: 14px; margin-top: 24px; padding-top: 20px; }
+  .founder-avatar { width: 44px; height: 44px; }
+  .founder-name { font-size: 15px; }
+  .founder-role { font-size: 10px; }
+
+  /* FAQ */
+  .faq { padding: 48px 0 64px; }
+  .faq-head { margin-bottom: 32px; }
+  .faq-title { font-size: clamp(28px, 8vw, 40px); }
+  .faq-list { gap: 10px; }
+  .faq-q { padding: 16px 18px; font-size: 15px; gap: 14px; }
+  .faq-toggle { width: 24px; height: 24px; font-size: 16px; }
+  .faq-a { padding: 0 18px 18px; font-size: 14px; }
+
+  /* Booking */
+  .book { padding: 56px 0 64px; }
+  .book-inner { gap: 32px; }
+  .book-title { font-size: clamp(40px, 11vw, 56px); margin-bottom: 20px; line-height: 0.98; }
+  .book-lede { font-size: 15.5px; margin-bottom: 24px; }
+  .book-promises { gap: 10px; margin-bottom: 24px; }
+  .book-promise { font-size: 13.5px; gap: 10px; }
+  .bp-icon { width: 20px; height: 20px; }
+  .book-direct { font-size: 11px; padding-top: 18px; }
+  .book-form { padding: 22px 20px; border-radius: 20px; }
+  .book-form-head { margin-bottom: 18px; padding-bottom: 16px; }
+  .book-form-head .mono { font-size: 10px; }
+  .book-step { gap: 14px; }
+  .book-step-title { font-size: 20px; }
+  .book-row { grid-template-columns: 1fr; gap: 12px; }
+  .field input, .field select, .field textarea { padding: 11px 14px; font-size: 14.5px; }
+  .field-label { font-size: 10px; }
+  .chip-btn { padding: 9px 14px; font-size: 13px; }
+  .book-actions .btn { padding: 11px 16px; font-size: 13.5px; }
+
+  /* Footer */
+  footer.site-footer { padding: 56px 0 32px; margin-top: 80px; }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 28px; padding-bottom: 36px; }
+  .footer-grid h4 { font-size: 10px; margin-bottom: 12px; }
+  .footer-grid a, .footer-grid li span { font-size: 13.5px; }
+  .footer-bottom { padding-top: 24px; font-size: 9.5px; flex-direction: column; align-items: flex-start; gap: 8px; }
+  .footer-massive { font-size: 120px; padding: 36px 0 0; }
+
+  /* Tweaks button moved out of the way of CTAs */
+}
+
+@media (max-width: 420px) {
+  .wrap, .wrap-tight { padding: 0 14px; }
+  .hero-title { font-size: 38px; }
+  .hero-bg-type { font-size: 180px; }
+  .problem-title, .teach-title, .format-title, .faq-title, .book-title { font-size: 30px; }
+  .quote-text { font-size: 22px; }
+  .footer-grid { grid-template-columns: 1fr; }
+  .reach-card .big { font-size: 42px; }
+  .stat-n { font-size: 30px; }
+  .wf-stat-n { font-size: 28px; }
+}

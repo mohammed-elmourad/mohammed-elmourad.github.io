@@ -690,3 +690,98 @@
 .s-break-track .dot-sep {
   color: var(--acid);
 }
+
+
+/* ============================================
+   SPONSORS MOBILE — comprehensive responsive
+   ============================================ */
+
+@media (max-width: 720px) {
+
+  /* Sponsor hero */
+  .s-hero { padding: 36px 0 32px; }
+  .s-hero-grid { gap: 32px; }
+  .s-hero-title { font-size: clamp(40px, 11vw, 56px); margin-bottom: 22px; line-height: 0.98; max-width: none; }
+  .s-hero-title .hi { transform: rotate(-1deg); padding: 0 0.1em; }
+  .s-hero-lede { font-size: 16px; margin-bottom: 28px; }
+  .s-hero-cta { gap: 10px; }
+  .s-hero-cta .btn { padding: 12px 18px; font-size: 14px; }
+  .s-hero-side { padding: 22px; border-radius: 20px; }
+  .s-hero-side-head { font-size: 9.5px; margin-bottom: 12px; }
+  .s-hero-side-q { font-size: 18px; margin-bottom: 18px; }
+  .s-hero-side-row { padding: 10px 0; }
+  .s-hero-side-k { font-size: 12.5px; }
+  .s-hero-side-v { font-size: 13.5px; }
+
+  /* Marquee break */
+  .s-break { padding: 16px 0; }
+  .s-break-track { gap: 36px; font-size: 32px; }
+
+  /* Reach */
+  .reach { padding: 56px 0 48px; }
+  .reach-head { margin-bottom: 32px; }
+  .reach-title { font-size: clamp(28px, 8.5vw, 40px); }
+  .reach-sub { font-size: 15.5px; margin-top: 14px; }
+  .reach-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+  .reach-card { padding: 22px 18px; }
+  .reach-card .big { font-size: 38px; }
+  .reach-card .lbl { font-size: 12.5px; }
+
+  /* Value */
+  .value { padding: 48px 0; }
+  .value-head { margin-bottom: 32px; }
+  .value-title { font-size: clamp(28px, 8.5vw, 40px); }
+  .value-grid { grid-template-columns: 1fr; gap: 12px; }
+  .value-card { padding: 24px 20px; gap: 10px; }
+  .value-card-title { font-size: 20px; }
+  .value-card-body { font-size: 14px; }
+
+  /* Categories */
+  .cat { padding: 56px 0; }
+  .cat-head { margin-bottom: 32px; }
+  .cat-title { font-size: clamp(28px, 8.5vw, 40px); }
+  .cat-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .cat-card { padding: 18px 16px; }
+  .cat-card-num { font-size: 9.5px; margin-bottom: 10px; }
+  .cat-card-name { font-size: 16px; margin-bottom: 8px; }
+  .cat-card-ex { font-size: 11.5px; line-height: 1.45; }
+
+  /* Tiers */
+  .tiers { padding: 56px 0; }
+  .tiers-head { margin-bottom: 32px; }
+  .tiers-title { font-size: clamp(28px, 8.5vw, 40px); }
+  .tiers-grid { grid-template-columns: 1fr; gap: 14px; }
+  .tier { padding: 26px 22px; gap: 14px; border-radius: 20px; }
+  .tier.featured { transform: none; }
+  .tier-flag { right: 18px; font-size: 9.5px; }
+  .tier-name { font-size: 11.5px; }
+  .tier-headline { font-size: 22px; }
+  .tier-blurb { font-size: 13.5px; }
+  .tier-price-amt { font-size: 30px; }
+  .tier-row { font-size: 13.5px; }
+
+  /* Process */
+  .process { padding: 56px 0; }
+  .process-head { margin-bottom: 32px; }
+  .process-title { font-size: clamp(28px, 8.5vw, 40px); }
+  .process-steps { grid-template-columns: 1fr; gap: 12px; }
+  .process-step { padding: 22px 18px; }
+  .process-step-n { width: 48px; height: 48px; font-size: 32px; margin-bottom: 12px; }
+  .process-step-t { font-size: 17px; }
+  .process-step-d { font-size: 13.5px; }
+
+  /* Contact */
+  .s-contact { padding: 56px 0; }
+  .s-contact-inner { gap: 32px; }
+  .s-contact-title { font-size: clamp(36px, 10vw, 52px); margin-bottom: 18px; line-height: 0.98; }
+  .s-contact-lede { font-size: 15.5px; margin-bottom: 24px; }
+  .s-contact-direct { font-size: 11px; padding-top: 18px; }
+  .s-form { padding: 22px 20px; border-radius: 20px; }
+  .s-form-title { font-size: 18px; }
+}
+
+@media (max-width: 420px) {
+  .reach-grid, .cat-grid { grid-template-columns: 1fr; }
+  .s-hero-title, .reach-title, .value-title, .cat-title, .tiers-title, .process-title, .s-contact-title { font-size: 30px; }
+  .s-break-track { font-size: 24px; gap: 28px; }
+}
